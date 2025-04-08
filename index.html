@@ -6,6 +6,30 @@
   <title>ASK EXPLAINERS</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+  <!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+<!-- Professional Animation -->
+<style>
+  body {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .professional-appear {
+    animation: slideUpScale 1s ease-out;
+  }
+
+  @keyframes slideUpScale {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +59,7 @@
   <header class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
       <img src="Picsart_24-11-09_17-20-12-075.png" alt="Logo" class="logo-bounce w-16 h-auto mr-4">
-      <h1 class="text-2xl font-bold text-blue-600">ASK EXPLAINERS</h1>
+      <h1 class="text-2xl font-bold text-blue-600 professional-appear">ASK EXPLAINERS</h1>
       <nav>
         <a href="#about" class="mx-2 hover:text-blue-500">About</a>
         <a href="#videos" class="mx-2 hover:text-blue-500">Videos</a>
