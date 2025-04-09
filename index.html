@@ -27,7 +27,14 @@
     100% {
       opacity: 1;
       transform: translateY(0) scale(1);
-    }
+      
+    }.animated-icon {
+  transition: transform 0.3s ease;
+}
+
+.animated-icon:hover {
+  transform: scale(1.2) rotate(5deg);
+}
   }
 </style>
   <head>
@@ -119,28 +126,38 @@
     </div>
   <section id="contact" class="py-12 bg-white">
   <div class="max-w-4xl mx-auto text-center">
-    <h3 class="text-3xl font-semibold mb-6">Contact</h3>
+    <h2 class="text-4xl font-bold text-gray-800 mb-12">Contact Us</h2>
 
     <!-- Email -->
     <p class="text-lg mb-8 flex justify-center items-center space-x-3">
-      <i class="fas fa-envelope text-blue-600 text-xl"></i>
+      <i class="fas fa-envelope text-blue-600 text-xl animate-pulse"></i>
       <a href="mailto:kumailhussain313@gmail.com" class="text-blue-600 hover:underline">
         kumailhussain313@gmail.com
       </a>
     </p>
 
     <!-- Social Media Links -->
-    <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-      <!-- Ask Explainers Facebook -->
-      <a href="https://www.facebook.com/share/1BYtiZKn4C/" target="_blank" class="flex items-center space-x-3 hover:text-blue-800 transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook Logo" class="w-8 h-8">
+    <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/1BYtiZKn4C/" target="_blank" class="flex items-center space-x-3 hover:text-blue-800 transition transform hover:scale-105 duration-200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook Logo" class="w-8 h-8 animated-icon">
         <span class="text-lg font-medium">Ask Explainers</span>
       </a>
 
-      <!-- Ask Explainers Instagram -->
-      <a href="https://www.instagram.com/askexplainers?igsh=bGQzZGsydXUxZmk1" target="_blank" class="flex items-center space-x-3 hover:text-pink-600 transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="w-8 h-8 rounded">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/askexplainers?igsh=bGQzZGsydXUxZmk1" target="_blank" class="flex items-center space-x-3 hover:text-pink-600 transition transform hover:scale-105 duration-200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="w-8 h-8 rounded animated-icon">
         <span class="text-lg font-medium">@askexplainers</span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://whatsapp.com/channel/0029VaaETMIHAdNTPfoV1r3D" target="_blank" class="flex items-center space-x-3 hover:text-green-600 transition transform hover:scale-105 duration-200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="w-8 h-8 animated-icon">
+        <span class="text-lg font-medium">WhatsApp Channel</span>
+      </a>
+    </div>
+  </div>
+  </section>
       </a>
       </a>
     </div>
